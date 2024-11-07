@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Cherenkov Energy Consultoria</title>
+</head>
+<body>
+    <header>
+        <h1>Cherenkov Energy Consultoria</h1>
+        <br>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo à Cherenkov Consultoria Elétrica</h2>
+            <hr>
+            <br>
+            <p>Oferecemos as melhores soluções para você e seu negócio.</p>
+            <hr>
+            <br>
+            <a href="#servicos" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe dedicada, pronta para oferecer soluções inovadoras e de qualidade para nossos clientes.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-container">
+                <div class="servico">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Desenvolvemos softwares responsivos e altamente otimizados, incluindo soluções de programação para máquinas e robôs, voltadas para a automação e inovação na Indústria 4.0.</p>
+                </div>
+
+                <div class="servico">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Serviços de Consultoria Elétrica</h3>
+                    <p>Oferecemos consultoria elétrica especializada para empresas, com ênfase na redução de custos operacionais, aprimoramento da qualidade das instalações elétricas e desenvolvimento de projetos de sistemas de aterramento para transmissão e distribuição de energia.</p>
+                </div>
+                
+                <div class="servico">
+                    <i class="fas fa-search"></i>
+                    <h3>Projetos Elétricos</h3>
+                    <p>Desenvolvemos soluções de software personalizadas para otimizar projetos elétricos de pequeno e médio porte, com foco em sistemas avançados de dimensionamento de cabos e outros cálculos críticos para garantir eficiência e segurança.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Projetos</h2>
+            <div class="galeria-container">
+                <div class="galeria-item"><img src="https://via.placeholder.com/300" alt="Projeto 1"></div>
+                <div class="galeria-item"><img src="https://via.placeholder.com/300" alt="Projeto 2"></div>
+                <div class="galeria-item"><img src="https://via.placeholder.com/300" alt="Projeto 3"></div>
+                <div class="galeria-item"><img src="https://via.placeholder.com/300" alt="Projeto 4"></div>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimentos-container">
+                <div class="depoimento">
+                    <p>"A equipe foi incrível! O programa superou minhas expectativas!"</p>
+                    <h4>- Cliente A</h4>
+                </div>
+                <div class="depoimento">
+                    <p>"Excelente trabalho, atendimento e suporte!"</p>
+                    <h4>- Cliente B</h4>
+                </div>
+                <div class="depoimento">
+                    <p>"Recomendo! Profissionalismo e dedicação em cada projeto."</p>
+                    <h4>- Cliente C</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário -->
+        <section id="contato">
+            <div class="form-container">
+                <h2>Formulário de Contato</h2>
+                <form id="advanced-form" action="/submit" method="POST">
+                    
+                    <!-- Nome Completo -->
+                    <div class="form-group">
+                        <label for="full-name">Nome Completo</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Digite seu nome completo" required>
+                        <div class="error" id="name-error"></div>
+                    </div>
+                    
+                    <!-- E-mail -->
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        <div class="error" id="email-error"></div>
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" pattern="^\(\d{2}\) \d{5}-\d{4}$" required>
+                        <div class="error" id="phone-error"></div>
+                    </div>
+
+                    <!-- Data de Nascimento -->
+                    <div class="form-group">
+                        <label for="dob">Data de Nascimento</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <div class="error" id="dob-error"></div>
+                    </div>
+
+                    <!-- Gênero -->
+                    <div class="form-group">
+                        <label>Gênero</label>
+                        <input type="radio" id="male" name="gender" value="masculino" required>
+                        <label for="male">Masculino</label>
+                        <input type="radio" id="female" name="gender" value="feminino">
+                        <label for="female">Feminino</label>
+                        <input type="radio" id="other" name="gender" value="outro">
+                        <label for="other">Outro</label>
+                        <div class="error" id="gender-error"></div>
+                    </div>
+
+                    <!-- Preferência de Contato -->
+                    <div class="form-group">
+                        <label for="contact-preference">Preferência de Contato</label>
+                        <select id="contact-preference" name="contact-preference">
+                            <option value="email">E-mail</option>
+                            <option value="telefone">Telefone</option>
+                        </select>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Escreva sua mensagem" rows="4"></textarea>
+                    </div>
+
+                    <!-- Aceite dos Termos -->
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Aceito os termos e condições</label>
+                        <div class="error" id="terms-error"></div>
+                    </div>
+
+                    <!-- Botão de Envio -->
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cherenkov Energy Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função de validação do formulário
+        document.getElementById('advanced-form').addEventListener('submit', function(event) {
+            let isValid = true;
+
+            // Validação dos campos (adicionar mais validações conforme necessário)
+
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
